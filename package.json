@@ -1,7 +1,7 @@
 {
-  "name": "ChessTrainer",
+  "name": "Draw-a-Chart",
   "version": "1.0.0",
-  "description": "A Chess Trainer for Turing School's Game Time project.",
+  "description": "A chart collecting user input for collecting chart information.",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jphoenix86/chess_trainer.git"
+    "url": "https://github.com/jphoenix86/draw-a-chart.git"
   },
-  "author": "Justin Holzmann and George Hudson",
+  "author": "Rebecca Wei, Bomani McClendon, Justin Holzmann",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jphoenix86/chess_trainer"
+    "url": "https://github.com/jphoenix86/draw-a-chart"
   },
   "homepage": "http://jphoenix86.github.io/chess_trainer/",
   "devDependencies": {
