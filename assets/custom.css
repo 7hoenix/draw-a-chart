@@ -5,5 +5,13 @@
 
 #answerButton {
 	display: none !important;
-	padding: 10px; 
+	padding: 10px;	 
+}
+
+.questionBody {
+	padding: 10px;
+}
+
+#questions {
+	display: none;
 }
