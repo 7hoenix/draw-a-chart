@@ -1,7 +1,13 @@
 var regression = require("regression");
-var mylessons = {'poly': [['polynomial', 0], ['polynomial', 1], ['polynomial', 2], ['polynomial', 3]], 
+var mylessons = {'poly': [['polynomial', 0], ['polynomial', 1], ['polynomial', 2], ['polynomial', 3], ['polynomial', 4]], 
 'exp': [['exponential', 2], ['polynomial', 1]]};
 
+/**function Analyze(data){
+	var model = regression('polynomial', data, 2);
+	console.log(model);
+	computeRSq(data, model.points);
+}
+**/
 function Analyze(data) {
 	var lesson = 'poly';
 	var modelsToTry = mylessons[lesson];
@@ -47,10 +53,6 @@ function interpretModel(modelType, modelEquation){
 		else{
 			return('The graph you drew looks quadratic and concave down. That means it has a maximum somewhere.');
 		}
-	}
-
-	if (penFactor == 3){
-		return('The graph you drew is quite complicated.');
 	}
 }
 
