@@ -1,0 +1,73 @@
+# Speed Chess / Chess Trainer
+
+## The Big Feature that's Different:
+
+. Most Chess games work like so:
+
+* You click the piece you want to move.
+* The interface lights up with squares your piece can move too.
+* You click a square assuming that its a legal move.
+
+. I want to do it backwards.
+
+You click on a square you want to move to... and it will give you a listing of
+pieces that can move to that square (using the keyboard so its super fast and
+natural).
+
+It's speed chess on a computer.
+
+## Ideas for solving checkmate
+
+### (If you can do that... then the rest seems doable)
+
+Last step:
+
+function checkMate (here) {
+  if (inCheck()) {
+    [checkMoves(), checkKill(), checkBlock()]
+      .all(worker) {
+      // Javascript defaults to 0... So if a filter returns a single false entry
+      // this stays false.
+        if (worker(function filter(here) {
+          myPieces.checkMoves(here)
+        });
+          setcheckMateFlag()
+        )
+        }
+      }
+  }
+};
+
+## Why do this idea at all?
+
+### The idea of Satisficing (sp):
+
+The human brain seems pretty rational and logical so more often then not we do
+this thing called satisficing.
+
+Its a cognitive Bias (a way we as humans systematically lie to ourselves).
+
+It loosely means that although we think we are seeing a ton of options and
+making the very best option... we tend to just pick the first option that we
+believe might get us to our chosen outcome.
+
+## That's a really bad thing in the game of Chess because it means you don't
+even know your blind spots.
+
+This will train your blind spots as you will notice moves you hadn't considered
+which will force you to see the entire board at once.
+
+Over time this will lead to a much better player as it will drastically increase
+your board vision.
+
+
+function checkMoves (here) {
+
+}
+
+
+
+The interface (in a perfect world) is slightly familiar to the Vimium extension.
+It works with the:
+
+:keyup option (or something else equivalent).

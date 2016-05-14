@@ -1,0 +1,24 @@
+.wrapper {
+  display: inline-block;
+}
+
+.game {
+  float: left;
+}
+
+.stats {
+  float: right;
+  margin-left: 5em;
+  min-height: 800px;
+  min-width: 400px;
+  border: 10px solid lightgrey;
+  text-align: center;
+}
+
+#player-turn {
+  min-height: 5em;
+}
+
+#game-status {
+  min-height: 5em;
+}

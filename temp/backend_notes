@@ -1,0 +1,27 @@
+Chess Trainer backend:
+
+Then run calculations on the game to update averages for the players account (which would then be cached).
+
+Users => CRUD actions. Has many games.
+
+Games => Has many turns.
+
+id, white_player(user_id), black_player(user_id), result
+
+game turns =>
+
+id / game_id / move_count / piece_id / square_id / square_id
+
+Pieces table
+id / type / color
+
+squares table
+id / x / y
+
+Turns =>
+
+*Matches => Has many games.
+
+Games have turns.
+
+Each turn has pieces in squares.
