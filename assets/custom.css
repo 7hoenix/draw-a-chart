@@ -1,15 +1,6 @@
-#highchart {
-	width: 800px;
-	height: 800px;
-}
-
 #answerButton {
-	display: none !important;
 	padding: 10px;	 
-}
-
-.questionBody {
-	padding: 10px;
+	width: 100%;
 }
 
 #questions {
